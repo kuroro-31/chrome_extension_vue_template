@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build && node update-manifest.cjs && node update-html-paths.cjs",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
-  },
-  "devDependencies": {
+    "vue": "^3.3.4",
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.68.0",
+    "tailwindcss": "^3.3.3",
     "@vitejs/plugin-vue": "^4.2.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
